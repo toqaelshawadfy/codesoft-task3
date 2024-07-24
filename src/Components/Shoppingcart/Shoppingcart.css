@@ -1,0 +1,100 @@
+.empty{
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.itemimg{
+    width: 15%;
+}
+.chooseitemname{
+    margin-left: 24px;
+}
+.delete-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .delete-svgIcon {
+    width: 15px;
+    transition-duration: 0.3s;
+  }
+  
+  .delete-svgIcon path {
+    fill: white;
+  }
+  
+  .delete-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  
+  .delete-button:hover .delete-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .delete-button::before {
+    display: none;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+.total {
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-family: "Oswald", sans-serif;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.totalbox{
+    display: flex;
+    justify-content: right;
+}
+.chooseitemname h5,span ,.chooseitemprice h5{
+    font-family: "Oswald", sans-serif;
+}
+.chooseitemprice h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.chooseitemQuantity p{
+  font-family:"Oswald", sans-serif;
+   font-size: 20px;
+}
+.chooseitemQuantity p span,.chooseitemprice span{
+  font-weight: 600;
+}
